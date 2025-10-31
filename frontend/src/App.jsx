@@ -23,7 +23,7 @@ const App = () => {
       return;
     }
     try {
-      const response = await axios.post('http://localhost:5001/api/auth/signup', {
+      const response = await axios.post('https://expense-tracker-backend-wv6q.onrender.com/api/auth/signup', {
         name,
         email,
         password
@@ -52,7 +52,7 @@ const App = () => {
       return;
     }
     try {
-      const response = await axios.post('http://localhost:5001/api/auth/login', {
+      const response = await axios.post('https://expense-tracker-backend-wv6q.onrender.com/api/auth/login', {
         email,
         password
       });
